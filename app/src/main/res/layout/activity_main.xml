@@ -10,7 +10,7 @@
         android:id="@+id/new_place_name"
         android:layout_width="322dp"
         android:layout_height="43dp"
-        android:background="@color/place_list_item_background"
+        android:background="@color/place_list_reason_background"
         android:ems="10"
         android:hint="Enter place name"
         android:inputType="textPersonName"
@@ -19,8 +19,8 @@
 
     <Button
         android:id="@+id/add_place_button"
-        android:layout_width="88dp"
-        android:layout_height="47dp"
+        android:layout_width="89dp"
+        android:layout_height="86dp"
         android:text="@string/add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -36,6 +36,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/new_place_name"
+        app:layout_constraintTop_toBottomOf="@+id/new_place_reason"
         app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/new_place_reason"
+        android:layout_width="322dp"
+        android:layout_height="43dp"
+        android:background="@color/place_list_reason_background"
+        android:ems="10"
+        android:hint="Why?"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/add_place_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_place_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
